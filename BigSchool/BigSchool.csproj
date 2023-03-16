@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3C3FD986-A306-4F15-9D49-DBBF1EE95A05}</ProjectGuid>
+    <ProjectGuid>{08360B7B-2250-4340-9D97-92521D18FCEC}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -19,7 +19,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44316</IISExpressSSLPort>
+    <IISExpressSSLPort>44366</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -175,28 +175,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303070119213_DB BigSchool.cs" />
-    <Compile Include="Migrations\202303070119213_DB BigSchool.designer.cs">
-      <DependentUpon>202303070119213_DB BigSchool.cs</DependentUpon>
+    <Compile Include="Migrations\202303151245567_InitialModel.cs" />
+    <Compile Include="Migrations\202303151245567_InitialModel.designer.cs">
+      <DependentUpon>202303151245567_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303070227487_CreateTableCourse.cs" />
-    <Compile Include="Migrations\202303070227487_CreateTableCourse.designer.cs">
-      <DependentUpon>202303070227487_CreateTableCourse.cs</DependentUpon>
+    <Compile Include="Migrations\202303151257216_CreateTableCourse.cs" />
+    <Compile Include="Migrations\202303151257216_CreateTableCourse.designer.cs">
+      <DependentUpon>202303151257216_CreateTableCourse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303070230156_PopulateCategoryTable.cs" />
-    <Compile Include="Migrations\202303070230156_PopulateCategoryTable.designer.cs">
-      <DependentUpon>202303070230156_PopulateCategoryTable.cs</DependentUpon>
+    <Compile Include="Migrations\202303151258258_PopulateCategoryTable.cs" />
+    <Compile Include="Migrations\202303151258258_PopulateCategoryTable.designer.cs">
+      <DependentUpon>202303151258258_PopulateCategoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303151406080_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\202303151406080_AddNameColumnToApplicationUser.designer.cs">
+      <DependentUpon>202303151406080_AddNameColumnToApplicationUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewsModel\CourseViewModel.cs" />
+    <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\FutureDate.cs" />
+    <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -273,14 +278,17 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202303070119213_DB BigSchool.resx">
-      <DependentUpon>202303070119213_DB BigSchool.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303151245567_InitialModel.resx">
+      <DependentUpon>202303151245567_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202303070227487_CreateTableCourse.resx">
-      <DependentUpon>202303070227487_CreateTableCourse.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303151257216_CreateTableCourse.resx">
+      <DependentUpon>202303151257216_CreateTableCourse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202303070230156_PopulateCategoryTable.resx">
-      <DependentUpon>202303070230156_PopulateCategoryTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303151258258_PopulateCategoryTable.resx">
+      <DependentUpon>202303151258258_PopulateCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303151406080_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>202303151406080_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -299,9 +307,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51484</DevelopmentServerPort>
+          <DevelopmentServerPort>51180</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44316/</IISUrl>
+          <IISUrl>https://localhost:44366/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
