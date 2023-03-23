@@ -111,3 +111,12 @@ E:\ThuchanhWeb\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.GenerateResource.c
 E:\ThuchanhWeb\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.CreateTableCourse.resources
 E:\ThuchanhWeb\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.PopulateCategoryTable.resources
 E:\ThuchanhWeb\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddNameColumnToApplicationUser.resources
+E:\ThuchanhWeb\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddAttendance.resources
+E:\ThuchanhWeb\BigSchool\BigSchool\bin\System.Net.Http.Formatting.dll
+E:\ThuchanhWeb\BigSchool\BigSchool\bin\System.Web.Http.dll
+E:\ThuchanhWeb\BigSchool\BigSchool\bin\System.Web.Http.WebHost.dll
+E:\ThuchanhWeb\BigSchool\BigSchool\bin\System.Net.Http.Formatting.xml
+E:\ThuchanhWeb\BigSchool\BigSchool\bin\System.Web.Http.xml
+E:\ThuchanhWeb\BigSchool\BigSchool\bin\System.Web.Http.WebHost.xml
+E:\ThuchanhWeb\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddFollowingsTable.resources
+E:\ThuchanhWeb\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddIsCanceledColumnToCourse.resources
