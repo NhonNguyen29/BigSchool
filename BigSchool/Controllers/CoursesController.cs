@@ -68,8 +68,17 @@ namespace BigSchool.Controllers
             };
             return View(viewModel);
         }
-
         [Authorize]
+        //public ActionResult Following()
+        //{
+        //    var userId = User.Identity.GetUserId();
+        //    var courses = _dbContext.Followings
+        //            .Where(a => a.FollowerId == userId)
+        //            .Select(f => f.Followee)
+        //            .ToList();
+        //    return View("Following");
+        //}
+        //[Authorize]
         public ActionResult Mine()
         {
             var userId = User.Identity.GetUserId();

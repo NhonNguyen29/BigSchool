@@ -23,7 +23,7 @@
                     @course.Lecturer.Name
                     @if (Model.ShowAction)
                     {
-                    <button class="btn btn-default btn-sm js-toggle-follow" data-user-id="@course.LecturerId">Follow</button>
+                        <button class="btn btn-default btn-sm js-toggle-follow" data-user-id="@course.LecturerId">Follow</button>
                     }
                 </span>
                 @if (Model.ShowAction)
@@ -33,10 +33,12 @@
             </div>
         </li>
     }
- 
+
 </ul>
-@section scripts{
-    
+
+
+@section scripts
+{
     <script>
         $(document).ready(function () {
             $(".js-toggle-attendance").click(function (e) {
@@ -46,15 +48,16 @@
                         button
                             .removeClass("btn-default")
                             .addClass("btn-info")
-                            .text("Going")
+                            .text("Going");
                     })
                     .fail(function () {
-                        alert("Something Failed!")
+                        alert("Something failed!");
+
                     });
             });
-            $(".js-toggle-follow").click(function (e){
+            $(".js-toggle-follow").click(function (e) {
                 var button = $(e.target);
-                $.post("/api/follwings", { followeeId: button.attr("data-user-id") })
+                $.post("/api/followings", { followeeId: button.attr("data-user-id") })
                     .done(function () {
                         button.text("Following");
                     })
